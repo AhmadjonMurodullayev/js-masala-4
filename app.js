@@ -90,8 +90,20 @@ function findIndices(nums, target) {
     console.log("No two numbers add up to the target.");
 }
 
-const nums = [2, 7, 11, 15];
+const nums = [2,11, 15,7];
 const target = 9;
 
 findIndices(nums, target);
+
+// 6. Ixtiyoriy n ta element dan iborat bo’lgan array yarating va uning ichidagi dublicate bo’lgan item larni o’chiring:
+
+let number = [2,3,4,5,6,7,5,5]
+let son =[]
+for(let i = 0; i < number.length; i++){
+   
+    if(!son.includes(number[i])){
+        son.push(number[i])
+    }
+}
+console.log(son);
 
